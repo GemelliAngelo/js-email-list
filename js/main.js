@@ -6,7 +6,7 @@ const getEmails = () => {
   fetch("https://flynn.boolean.careers/exercises/api/random/mail").then(
     (response) =>
       response.json().then((data) => {
-        emailListEl.innerHTML += `<li class="h2 py-2">${data.response}</li>`;
+        emailListEl.innerHTML += `<li class="h2 p-3 border bg-secondary">${data.response}</li>`;
       })
   );
 };
