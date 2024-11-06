@@ -19,20 +19,26 @@
   <body>
     <div class="container">
       <div class="py-5">
-        <button
-          id="generate-button"
-          type="button"
-          class="btn btn-success p-3 mx-3"
-        >
-          GENERA
-        </button>
-        <button
-          id="delete-button"
-          type="button"
-          class="btn btn-danger p-3 mx-3"
-        >
-          CANCELLA
-        </button>
+        <div class="row">
+          <div class="d-grid gap-2 col-6">
+            <button
+              id="generate-button"
+              type="button"
+              class="btn btn-success p-3 mx-3 fw-bold"
+            >
+              GENERA
+            </button>
+          </div>
+          <div class="d-grid gap-2 col-6">
+            <button
+              id="delete-button"
+              type="button"
+              class="btn btn-danger p-3 mx-3 fw-bold"
+            >
+              CANCELLA
+            </button>
+          </div>
+        </div>
         <ul class="py-4 list-unstyled mx-3" id="email-list"></ul>
       </div>
     </div>
