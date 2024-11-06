@@ -1,11 +1,12 @@
 const emailListEl = document.getElementById("email-list");
-const buttonEl = document.querySelector("attribute=button");
+const generatebuttonEl = document.getElementById("generate-button");
+const deletebuttonEl = document.getElementById("delete-button");
 
 const getEmails = () => {
   fetch("https://flynn.boolean.careers/exercises/api/random/mail").then(
     (response) =>
       response.json().then((data) => {
-        emailListEl.innerHTML += `<li class="h2">${data.response}</li>`;
+        emailListEl.innerHTML += `<li class="h2 py-2">${data.response}</li>`;
       })
   );
 };
@@ -15,3 +16,6 @@ const printEmail = () => {
     getEmails();
   }
 };
+
+generatebuttonEl.addEventListener("click", printEmail);
+deletebuttonEl.addEventListener("click", () => (emailListEl.innerHTML = ""));

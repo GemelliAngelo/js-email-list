@@ -16,11 +16,24 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-secondary">
+  <body>
     <div class="container">
-      <div class="py-5 text-center">
-        <button type="button" class="btn btn-primary p-3">GENERA</button>
-        <ul id="email-list"></ul>
+      <div class="py-5">
+        <button
+          id="generate-button"
+          type="button"
+          class="btn btn-success p-3 mx-3"
+        >
+          GENERA
+        </button>
+        <button
+          id="delete-button"
+          type="button"
+          class="btn btn-danger p-3 mx-3"
+        >
+          CANCELLA
+        </button>
+        <ul class="py-4 list-unstyled" id="email-list"></ul>
       </div>
     </div>
     <!-- BOOTSTRAP JS -->
